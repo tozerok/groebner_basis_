@@ -124,16 +124,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="monom.cpp" />
-    <ClCompile Include="polynom.cpp" />
     <ClCompile Include="basis.cpp" />
     <ClCompile Include="basis.h" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="polynom.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
     <Text Include="output.txt" />
-    <Text Include="Text.txt" />
-    <Text Include="Текст1.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="monom.h" />

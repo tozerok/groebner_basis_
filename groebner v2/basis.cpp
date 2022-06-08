@@ -2,18 +2,26 @@
 #include"monom.h"
 #include"basis.h"
 #include<iostream>
+#include<set>
 using std::map;
 using std::vector;
 using std::cout;
 using std::complex;
+using std::pair;
+using std::set;
 
 void Buchberger_algorithm(vector<map<vector<int>, complex<double>>>& basis, bool out) {
 	int k = 0;
+	set<pair<int, int>>used;
 	while (k < basis.size())
 	{
 		int j = 0;
 		while (j < basis.size())
 		{
+			if (used.count({ std::min(j,k), std::max(j, k) })) {
+				j++;
+				continue;
+			}
 			if (j == k) {
 				j++;
 				continue;
@@ -29,6 +37,7 @@ void Buchberger_algorithm(vector<map<vector<int>, complex<double>>>& basis, bool
 				print(basis[j]);
 				cout << "имеют зацепление\n";
 			}
+			used.insert({std::min(j,k ), std::max(j, k)});
 			map<vector<int>, complex<double>> S_fg;
 			S_fg = S(basis[k], basis[j]);
 			if (out) {

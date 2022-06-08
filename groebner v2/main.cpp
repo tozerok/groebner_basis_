@@ -28,8 +28,8 @@ int main() {
 		print(basis);
 		cout << "\n";
 	}
-	cout << "Минимальный редуцированный базис Грёбнера\n";
 	min_red_basis(basis, out);
+	cout << "\nМинимальный редуцированный базис Грёбнера\n";
 	print(basis);
 	return 0;
 }

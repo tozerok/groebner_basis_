@@ -18,9 +18,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="polynom.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="monom.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -30,18 +27,15 @@
     <ClCompile Include="basis.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="polynom.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="output.txt">
       <Filter>Файлы ресурсов</Filter>
     </Text>
     <Text Include="input.txt">
-      <Filter>Файлы ресурсов</Filter>
-    </Text>
-    <Text Include="Text.txt">
-      <Filter>Файлы ресурсов</Filter>
-    </Text>
-    <Text Include="Текст1.txt">
       <Filter>Файлы ресурсов</Filter>
     </Text>
   </ItemGroup>
